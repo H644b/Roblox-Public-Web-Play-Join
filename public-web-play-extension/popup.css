@@ -1,0 +1,10 @@
+:root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+body { width: 310px; margin: 0; background: #fff; color: #17212b; }
+main { padding: 16px; }
+h1 { margin: 0 0 12px; font-size: 17px; }
+p { font-size: 13px; line-height: 1.4; }
+.note { margin-bottom: 0; color: #525b68; }
+@media (prefers-color-scheme: dark) {
+  body { background: #1b1f24; color: #f3f5f7; }
+  .note { color: #b6bcc6; }
+}

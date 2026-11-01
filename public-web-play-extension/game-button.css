@@ -1,0 +1,33 @@
+#game-details-play-button-container:has(> .rblx-web-play-button) {
+  position: relative;
+}
+
+#game-details-play-button-container:has(> .rblx-web-play-button) > [data-testid="play-button"] {
+  width: calc(100% - 68px) !important;
+}
+
+.rblx-web-play-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  border: 1px solid #a9beff;
+  border-radius: 8px;
+  background: #244dc7;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 120ms ease;
+}
+
+.rblx-web-play-button:hover {
+  background: #173ba8;
+}
+
+.rblx-web-play-button:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 2px;
+}

@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "minimum_chrome_version": "125",
+  "name": "Roblox Public Web Play Join (Experimental)",
+  "version": "0.3.0",
+  "description": "Adds a browser-play button to Roblox game pages and patches public Web Play joins without debugger access.",
+  "content_scripts": [
+    {
+      "matches": ["https://www.roblox.com/games/*"],
+      "css": ["game-button.css"],
+      "js": ["game-button.js"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["https://play.roblox.com/games/start*"],
+      "js": ["page-hook.js"],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ],
+  "action": {
+    "default_title": "Play Roblox in browser",
+    "default_popup": "popup.html"
+  }
+}

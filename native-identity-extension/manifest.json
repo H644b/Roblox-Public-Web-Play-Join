@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Roblox Web Play Native Join Header",
+  "version": "1.0.0",
+  "description": "Tests a native identity on one Web Play join tab. This does not enable browser gameplay.",
+  "permissions": [
+    "activeTab",
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "https://play.roblox.com/*",
+    "https://gamejoin.roblox.com/*"
+  ],
+  "action": {
+    "default_title": "Native join header test",
+    "default_popup": "popup.html"
+  }
+}

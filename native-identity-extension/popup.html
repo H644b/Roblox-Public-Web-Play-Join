@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Native join header test</title>
+    <link rel="stylesheet" href="popup.css">
+    <script src="popup.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>Native join header test</h1>
+      <p id="place" class="place">Checking the current tab…</p>
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+      <button id="toggle" type="button" disabled>Enable for this tab and reload</button>
+      <p class="limit">This changes the join request identity only. The public game's browser join still lacks a working WebTransport route, so gameplay may fail after admission.</p>
+    </main>
+  </body>
+</html>
